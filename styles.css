@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   THE PURPOSE OF THIS CSS RESET IS TO REMOVE THE DEFAULT
+   STYLESHEET THAT THE BROWSER PROVIDES.
+   SCROLL DOWN FURTHER FOR CUSTOM CSS ELEMENTS.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/* CUSTOM CSS ELEMENTS */
+
+/* The container contains all other elements on the page */
+#container {
+	width: 70%;
+	min-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The header appears at the top of each page */
+#header {
+	display: table;
+	width: 100%;
+	height: 3em;
+	background-color: #D3D3D3;
+	font-size: 2em;
+}
+
+#header h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+/* The page contains unique data for the specific page the user is on  */
+#page {
+	padding: 10px;
+	background-color: #949494;
+}
+
+
+/* */
+#results {
+	background-color: #BEBEBE;
+}
+
+#results .result {
+	overflow: hidden;
+}
+
+#results .result .imagebox {
+	background-color: #D3D3D3;
+	float: left;
+	height: 280px;
+    width: 33%;
+    position: relative;
+}
+
+#results .result .imagebox img {
+	max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+#results .result .infobox {
+	padding: 10px;
+	float: left;
+	width: 60%;
+}
+
+
+
+td {
+	padding: 2px;
+}
+
+
+/* The filterform is the form containing search filters */
+#filterform fieldset {
+	display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px solid;
+	min-height: 100px;
+}
+
+#filterform td {
+	min-width: 25%;
+}
+
+#filterform table {
+width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+
+
+/* The big button is wide and takes up an entire table cell */
+.big-button {
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* The big button is wide and takes up an entire table cell */
+.centered-td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+#footer {
+	background-color: #D3D3D3;
+	text-align: center;
+	padding: 30px;
+}
+
+
+
+
+
+
+
+/* For this slider, disable the 'origin' size. */
+#connect .noUi-origin {
+	right: auto;
+	width: 0;
+}
+
+/* Position the bar and color it. */
+#connect .connect {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #80C9F5;
+	box-shadow: inset 0 0 3px rgba(51,51,51,0.45);
+}
+
+/* When the slider is moved by tap,
+   transition the connect bar like the handle. */
+#connect.noUi-state-tap .connect {
+-webkit-transition: left 300ms, right 300ms;
+	transition: left 300ms, right 300ms;
+}
+
+
+
+
