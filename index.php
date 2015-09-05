@@ -6,7 +6,7 @@
 	</head>
 	
 	<body>
-		<div id="container">		
+		<div id="container">
 		
 			<?php include ("components/header.php"); ?>
 			
@@ -15,7 +15,7 @@
 				
 				<?php include ("components/filterform.php"); ?>
 				
-				<div id="searchresults"></div>
+				<div id="searchresults"></div> 
 			</div>
 			
 			<?php include ("components/footer.php"); ?>
@@ -23,6 +23,8 @@
 		</div>
 		
 		<script type="text/javascript" src="scripts/postfilterform.js"></script>
+
+	
 		
 	</body>
 </html>

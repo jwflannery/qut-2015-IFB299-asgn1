@@ -23,7 +23,13 @@
 			echo '
 			<div class="result">
 				<div class="imagebox">
-					<img src="'.$row['Photo'].'">
+
+					<!-- the image for each property is a link to the specific peroperty information page -->
+
+					<a href="property_page.php?id='.$row['ID'].'"> <img src="'.$row['Photo'].'"> </a> 
+
+					<!-- The ID is important for the sql query --> 
+
 				</div>
 				
 				<div class="infobox">

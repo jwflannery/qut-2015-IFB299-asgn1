@@ -13,10 +13,10 @@
 						die('Connection failed: ' . $conn->connect_error);
 					} 
 
-					$sql = 'SELECT DISTINCT Type from properties';
+					$sql = 'SELECT DISTINCT Type from properties'; // gets the options for the Property Types and displays them as the check box
 					$result = $conn->query($sql);
 					
-					if ($result->num_rows > 0) {
+					if ($result->num_rows > 0) { 
 						// output data of each row
 						echo '<fieldset><legend>Property type</legend>';
 						while($row = $result->fetch_assoc()) {
@@ -42,7 +42,7 @@
 						die('Connection failed: ' . $conn->connect_error);
 					} 
 
-					$sql = 'SELECT DISTINCT Suburb from properties';
+					$sql = 'SELECT DISTINCT Suburb from properties'; //gets the options for the Suburb and displays them as the check box
 					$result = $conn->query($sql);
 					
 					if ($result->num_rows > 0) {
@@ -71,7 +71,7 @@
 						die('Connection failed: ' . $conn->connect_error);
 					} 
 
-					$sql = 'SELECT DISTINCT Furnishings from properties';
+					$sql = 'SELECT DISTINCT Furnishings from properties'; //gets the options for the Furnishings and displays them as the check box
 					$result = $conn->query($sql);
 					
 					if ($result->num_rows > 0) {
@@ -89,7 +89,7 @@
 			</td>
 			
 			<td>
-				<fieldset>
+				<fieldset> // i think this is unfinished and still needs to be added 
 					<legend>Weekly Rent</legend>
 					<div id="slider"></div>
 				</fieldset>
@@ -97,9 +97,10 @@
 			
 		</tr>
 		
+		<!-- Create the Submit Button -->
 		<tr>
 			<td colspan="4" class="centered">
-				<input type="submit" value="Submit" class="big-button">
+				<input type="submit" value="Submit" class="big-button"> 
 			</td>
 		</tr>
 	</table>
