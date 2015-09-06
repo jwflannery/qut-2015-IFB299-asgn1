@@ -33,6 +33,7 @@ function post() {
 		}
 	}
 	query += ')';
+	query += 'ORDER BY Address';
 	
 	/* Remove this line to hide the query*/
 	$('#query').html(query);
