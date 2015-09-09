@@ -9,6 +9,7 @@
 		<div id="container">
 		
 			<?php include ("components/header.php"); ?>
+			<?php include ("components/main_login.php"); ?>
 			
 			<div id="page">
 				<div id="query"></div>
