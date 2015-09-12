@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2015 at 01:19 PM
+-- Generation Time: Sep 12, 2015 at 07:21 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `properties` (
   `Image_1` text,
   `Image_2` text,
   `Image_3` text
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `properties`
@@ -50,7 +50,8 @@ INSERT INTO `properties` (`ID`, `Address`, `Suburb`, `Type`, `Description`, `Pho
 (2, '13 John Street', 'Wellington Point', 'House', 'This amazing home lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed dapibus lectus, sed consequat lectus. Aenean bibendum turpis fringilla tincidunt tincidunt. Nam porttitor posuere pharetra. Sed ex velit, congue gravida ultrices ac, finibus ut ligula. Curabitur malesuada leo nulla, non dictum lacus tincidunt sit amet. Suspendisse faucibus ligula quis arcu consequat, pellentesque ultricies arcu auctor. Donec consectetur nulla sed mi venenatis maximus.', 'images/property02.jpg', 'Furnished', 495, '', NULL, NULL, NULL),
 (3, '45 Mary Lane', 'Ormiston', 'Share house', 'Donec ultricies justo ante, ut tincidunt sem dignissim ut. Vivamus diam tellus, varius vitae augue a, pretium ullamcorper ex. Sed bibendum erat ac est placerat pharetra et sed libero. Suspendisse arcu est, pulvinar eget neque vel, congue consequat elit. Morbi lectus magna, ultricies eu mauris nec, venenatis consequat metus. Maecenas quis nisl sed nisi suscipit ultricies et ut mi. Integer condimentum ultrices felis, ac eleifend nisl blandit ut. Sed magna augue, viverra a lacus a, tristique facilisis nulla. Aenean pulvinar maximus quam, ac scelerisque metus sollicitudin porta. Proin in ornare ligula, convallis tincidunt tellus.', 'images/property03.jpg', 'Furnished', 440, '', NULL, NULL, NULL),
 (4, '16 Segway Way', 'Acacia Ridge', 'Apartment', 'This is a lovely apartment.', 'http://o.homedsgn.com/wp-content/uploads/2013/02/a-house-19-800x548.jpg', 'Unfurnished', 300, '', NULL, NULL, NULL),
-(5, '121 old Cleveland Rd', 'Ormiston', 'House', 'A Beautiful House - with really ugly yellow couches', 'images/property05.jpg', 'Furnished', 400, '', 'images/property05_1.jpg', 'images/property05_2.jpg', 'images/property05_3.jpg');
+(5, '123 fake avenue', 'Fakestone', 'House', 'A Beautiful House - with really ugly yellow couches', 'images/property05.jpg', 'Furnished', 400, '', 'images/property05_1.jpg', 'images/property05_2.jpg', 'images/property05_3.jpg'),
+(6, '2333', '333', '333', '33', 'images/B28L88xCUAAJ376.jpg', '33', 33, '', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -70,7 +71,7 @@ ALTER TABLE `properties`
 -- AUTO_INCREMENT for table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
