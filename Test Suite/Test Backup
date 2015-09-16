@@ -1,0 +1,23 @@
+using NUnit.Framework;
+using NUnit.Core;
+
+namespace SeleniumTests
+{
+    public class Test
+    {
+        [Suite] public static TestSuite Suite
+        {
+            get
+            {
+                TestSuite suite = new TestSuite("Test");
+                suite.Add(new View Property Information());
+                suite.Add(new Log in());
+                suite.Add(new View Property Pictures());
+                suite.Add(new View Property Information());
+                suite.Add(new Add/Edit property information());
+                suite.Add(new Register new user accounts());
+                return suite;
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
 <div id="header">
-	<h1>David's Property Management Site</h1>
+	<?php
+		 Echo "<a href=../index.php><p align = 'center'>David's Property Management Website</a>"
+	?>
 </div>
