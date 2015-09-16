@@ -10,6 +10,9 @@
 		
 			<?php include ("components/header.php"); ?>
 			<?php include ("components/main_login.php"); ?>
+			<form name="registerform" method="post" action="components/register.php">
+			<input type="submit" name="Register" value="Register"></td>
+			</form>
 			
 			<div id="page">
 				<div id="query"></div>

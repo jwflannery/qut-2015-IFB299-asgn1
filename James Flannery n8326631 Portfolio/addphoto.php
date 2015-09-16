@@ -59,5 +59,4 @@
             
             mysql_close($conn);
 		 }
-		 		 Echo "<a href=../index.php>Done</a>"
 	?>
