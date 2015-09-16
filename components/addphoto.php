@@ -37,7 +37,7 @@
 				$sql = "UPDATE properties SET address = '$address', suburb = '$suburb', type = '$type', description = '$desc', photo = 'images/$photo', furnishings = '$furnish', rent = '$rent' WHERE id = $id" ;
 				echo "UPDATED";
 			}else{
-				$sql = "INSERT INTO properties (id, address, suburb, type, description, photo, furnishings	, rent) VALUES ('$id', '$address', '$suburb', '$type', '$desc', '$photo', '$furnish', '$rent')";
+				$sql = "INSERT INTO properties (id, address, suburb, type, description, photo, furnishings	, rent) VALUES ('$id', '$address', '$suburb', '$type', '$desc', 'images/$photo', '$furnish', '$rent')";
 				echo "INSERTED";
 			}
 			
