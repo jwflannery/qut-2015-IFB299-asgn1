@@ -3,7 +3,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['myusermane'])){
-	header("location:add_house.php");
+	header("location:admin_page.php");
 }
 
 
