@@ -4,7 +4,7 @@ add_photo: An extension to the form to add a house.
 	It allows the user to upload a photo, which is added to the server, 
 	then adds the address of the photo to the database, for later retrieval.
 
-main_login: The form that allows a user to enter their username and password.
+Test Suite: A suite of acceptance tests for the site, to be used to allow for easy confirmation and testing of user stories.
 
 checklogin: Takes the details from main_login, compares them to the users in the database,
 	and if they match, takes them to the add_house page.
