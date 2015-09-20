@@ -89,10 +89,32 @@
 			</td>
 			
 			<td>
-				<fieldset> // i think this is unfinished and still needs to be added 
-					<legend>Weekly Rent</legend>
-					<div id="slider"></div>
-				</fieldset>
+				<?php
+					include ("phpscripts/dbconfig.php");
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					
+					// Check connection
+					if ($conn->connect_error) {
+						die('Connection failed: ' . $conn->connect_error);
+					} 
+
+					$sql = 'SELECT DISTINCT Rent from properties'; //gets the options for the Rent and displays them as the check box
+					$result = $conn->query($sql);
+					
+					if ($result->num_rows > 0) {
+						echo '<fieldset><legend>Rent</legend>';
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo '<input type="checkbox" name="Rent" value="'.$row['Rent'].'">'.$row['Rent'].'</input><br/>';
+						}
+						echo '</fieldset>';
+					} else {
+						echo '0 results';
+					}
+					$conn->close();
+				?>
 			</td>
 			
 		</tr>
